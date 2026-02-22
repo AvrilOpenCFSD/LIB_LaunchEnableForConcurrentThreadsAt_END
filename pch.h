@@ -9,9 +9,13 @@
 
 // add headers that you want to pre-compile here
 #include "framework.h"
-#include "LaunchEnableForConcurrentThreadsAt_END_Framework.h"
-#include "LaunchEnableForConcurrentThreadsAt_END_Global.h"
-#include "LaunchEnableForConcurrentThreadsAt_END.h"
-#include "LaunchEnableForConcurrentThreadsAt_END_Control.h"
+#include <array>
+#include <cstddef>
+#include <list>
+#include <vector>
+#include "launchEnableForConcurrentThreadsAt_END_Framework.h"
+#include "launchEnableForConcurrentThreadsAt_END_Global.h"
+#include "launchEnableForConcurrentThreadsAt_END.h"
+#include "launchEnableForConcurrentThreadsAt_END_Control.h"
 
 #endif //PCH_H

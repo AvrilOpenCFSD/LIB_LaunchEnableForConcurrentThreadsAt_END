@@ -1,20 +1,38 @@
 #pragma once
-#include <array>
 
-namespace Avril_FSD
+namespace OpenAvrilLIB
 {
-    class LaunchEnableForConcurrentThreadsAt_END_Global
+    class launchEnableForConcurrentThreadsAt_END_Global
     {
+// classes.
+
+// registers.
+
+// pointers.
+
     public:
-        LaunchEnableForConcurrentThreadsAt_END_Global();
-        ~LaunchEnableForConcurrentThreadsAt_END_Global();
-        bool Get_flag_core_ACTIVE();
-        bool Get_flag_core_IDLE();
-        unsigned char Get_number_Implemented_Cores();
+// constructor.
+        launchEnableForConcurrentThreadsAt_END_Global();
+
+// destructor.
+        ~launchEnableForConcurrentThreadsAt_END_Global();
+
+// public.
+    // get.
+        bool get_flag_core_ACTIVE();
+        bool get_flag_core_IDLE();
+        int8_t get_number_Implemented_Threads();
+    // set.
 
     private:
-        static void Set_flag_core_ACTIVE(bool value);
-        static void Set_flag_core_IDLE(bool value);
-        static void Set_number_Implemented_Cores(__int8 coreId);
+// private.
+        void create_flag_core_ACTIVE();
+        void create_flag_core_IDLE();
+        void create_number_Implemented_Threads();
+    // get.
+    // set.
+        void set_flag_core_ACTIVE(bool value);
+        void set_flag_core_IDLE(bool value);
+        void set_number_Implemented_Threads(int8_t coreId);
     };
 }

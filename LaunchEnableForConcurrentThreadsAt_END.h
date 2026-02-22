@@ -1,27 +1,38 @@
 #pragma once
 
-namespace Avril_FSD
+namespace OpenAvrilLIB
 {
-    class LaunchEnableForConcurrentThreadsAt_END
+    class launchEnableForConcurrentThreadsAt_END
     {
-    public:
-        LaunchEnableForConcurrentThreadsAt_END();
-        virtual ~LaunchEnableForConcurrentThreadsAt_END();
-        void Initialise_Control();
-        void Thread_Start(class LaunchEnableForConcurrentThreadsAt_END_Framework* obj, unsigned char concurrent_CoreId);
-        void Thread_End(class LaunchEnableForConcurrentThreadsAt_END_Framework* obj, unsigned char concurrent_CoreId);
+        // classes.
 
-        class LaunchEnableForConcurrentThreadsAt_END_Global* Get_LaunchConcurrency_Global();
-        class LaunchEnableForConcurrentThreadsAt_END_Control* Get_Control_Of_LaunchConcurrency();
+// registers.
+
+// pointers.
+
+    public:
+// constructor.
+        launchEnableForConcurrentThreadsAt_END();
+
+// destructor.
+        virtual ~launchEnableForConcurrentThreadsAt_END();
+
+// public.
+        void initialise_Control();
+        void thread_Start(class launchEnableForConcurrentThreadsAt_END_Framework* obj, int8_t concurrent_CoreId);
+        void thread_End(class launchEnableForConcurrentThreadsAt_END_Framework* obj, int8_t concurrent_CoreId);
+    // get.
+        class launchEnableForConcurrentThreadsAt_END_Global* get_ptr_Global();
+        class launchEnableForConcurrentThreadsAt_END_Control* get_ptr_launchConcurrency_Control();
+    // set.
 
     private:
-        static void Create_LaunchEnableForConcurrentThreadsAt_END_Global();
-        static void Create_Control_Of_LaunchConcurrency();
-
-        static class LaunchEnableForConcurrentThreadsAt_END_Global* Get__LaunchConcurrency_Global();
-        static class LaunchEnableForConcurrentThreadsAt_END_Control* Get__Control_Of_LaunchConcurrency();
-
-        static void Set_LaunchConcurrency_Global(class LaunchEnableForConcurrentThreadsAt_END_Global* global);
-        static void Set_Control_Of_LaunchConcurrency(class LaunchEnableForConcurrentThreadsAt_END_Control* control);
+// private.
+        void create_ptr_Global();
+        void create_ptr_launchConcurrency_Control();
+    // get.
+    // set.
+        void set_ptr_Global(class launchEnableForConcurrentThreadsAt_END_Global* newClass);
+        void set_ptr_launchConcurrency_Control(class launchEnableForConcurrentThreadsAt_END_Control* newClass);
     };
 }

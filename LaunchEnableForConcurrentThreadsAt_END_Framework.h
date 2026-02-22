@@ -1,17 +1,50 @@
 #pragma once
 
-namespace Avril_FSD
+namespace OpenAvrilLIB
 {
-    class LaunchEnableForConcurrentThreadsAt_END_Framework
+    class launchEnableForConcurrentThreadsAt_END_Framework
     {
+// classes.
+
+// registers.
+
+// pointers.
+
     public:
-        LaunchEnableForConcurrentThreadsAt_END_Framework();
-        virtual ~LaunchEnableForConcurrentThreadsAt_END_Framework();
-        class LaunchEnableForConcurrentThreadsAt_END* Get_LaunchEnableForConcurrentThread();
+// constructor.
+        launchEnableForConcurrentThreadsAt_END_Framework();
+
+// destructor.
+        virtual ~launchEnableForConcurrentThreadsAt_END_Framework();
+
+// public.
+        void initialise(class launchEnableForConcurrentThreadsAt_END_Framework* obj);
+    // get.
+        class launchEnableForConcurrentThreadsAt_END* get_ptr_launchConcurrency();
+    // set.
 
     private:
-        static void Create_LaunchEnableForConcurrentThreadsAt();
-        static class LaunchEnableForConcurrentThreadsAt_END* Get__LaunchEnableForConcurrentThreadsAt();
-        static void Set_LaunchEnableForConcurrentThreadsAt(class LaunchEnableForConcurrentThreadsAt_END* concurrentQue);
+// private.
+        void create_ptr_launchConcurrency();
+    // get.
+    // set.
+        void set_ptr_launchConcurrency(class launchEnableForConcurrentThreadsAt_END* concurrentQue);
     };
 }
+// classes.
+
+// registers.
+
+// pointers.
+
+// constructor.
+
+// destructor.
+
+// public.
+    // get.
+    // set.
+
+// private.
+    // get.
+    // set.
