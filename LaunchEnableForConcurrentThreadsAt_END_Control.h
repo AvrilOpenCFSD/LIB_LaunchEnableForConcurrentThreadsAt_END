@@ -18,7 +18,13 @@ namespace OpenAvrilLIB
         virtual ~launchEnableForConcurrentThreadsAt_END_Control();
 
 // public.
-        void initialise(class launchEnableForConcurrentThreadsAt_END_Framework* obj);
+        void initialise_concurrentCycle_Try_CoreId_Index(uint8_t* newINITIALISED_Value);
+        void initialise_flag_praisinglaunch(bool* newINITIALISED_Flagbit);
+        void initialise_Item_On_list_Of_launchActive_Count_For_ThreadID(uint8_t concurrenctThreadID, uint32_t* newINITIALISED_Value);
+        void initialise_Item_On_list_Of_launchIdle_Count_For_ThreadID(uint8_t concurrenctThreadID, uint32_t* newINITIALISED_Value);
+        void initialise_Item_On_list_Of_STATE_For_ConcurrentCore(uint8_t concurrenct_threadID, class launchEnableForConcurrentThreadsAt_END_Global* ptr_Global);
+        void initialise_new_concurrentCycle_Try_CoreId_Index(uint8_t* newINITIALISED_Value);
+        void initialise_list_for_Que_Of_CoreTolaunch();
         void launchEnable_Activate(class launchEnableForConcurrentThreadsAt_END_Framework* obj);
         void launchEnable_Request(class launchEnableForConcurrentThreadsAt_END_Framework* obj, uint8_t concurrent_CoreId);
         void launchEnable_SortQue(class launchEnableForConcurrentThreadsAt_END_Framework* obj, uint8_t number_Implemented_Threads);
@@ -30,6 +36,7 @@ namespace OpenAvrilLIB
         uint32_t get_Item_On_list_Of_launchIdle_Count_For_ThreadID(uint8_t threadID);
         bool get_Item_On_list_Of_STATE_For_ConcurrentCore(uint8_t concurrenct_threadID);
         uint8_t get_Item_On_list_for_Que_Of_CoreTolaunch(uint8_t concurrenct_threadID);
+        uint8_t get_Length_Of_list_Of_launchActive_Count_For_ThreadID();
         uint8_t get_new_concurrentCycle_Try_CoreId_Index();
         std::list<uint32_t>* get_ptr_list_Of_launchActive_Count_For_ThreadID();
         std::list<uint32_t>* get_ptr_list_Of_launchIdle_Count_For_ThreadID();
@@ -58,16 +65,8 @@ namespace OpenAvrilLIB
         void create_ptr_list_Of_STATE_For_ConcurrentCore();
         void create_ptr_list_for_Que_Of_CoreTolaunch();
         void dynamicStagger(class launchEnableForConcurrentThreadsAt_END_Framework* obj, uint8_t coreId);
-        void initialise_concurrentCycle_Try_CoreId_Index(uint8_t* newINITIALISED_Value);
-        void initialise_flag_praisinglaunch(bool* newINITIALISED_Flagbit);
-        void initialise_Item_On_list_Of_launchActive_Count_For_ThreadID(uint8_t concurrenctThreadID, uint32_t* newINITIALISED_Value);
-        void initialise_Item_On_list_Of_launchIdle_Count_For_ThreadID(uint8_t concurrenctThreadID, uint32_t* newINITIALISED_Value);
-        void initialise_Item_On_list_Of_STATE_For_ConcurrentCore(uint8_t concurrenct_threadID, class launchEnableForConcurrentThreadsAt_END_Global* ptr_Global);
-        void initialise_new_concurrentCycle_Try_CoreId_Index(uint8_t* newINITIALISED_Value);
-        void initialise_list_for_Que_Of_CoreTolaunch();
         void launchEnable_ShiftQueValues(class launchEnableForConcurrentThreadsAt_END_Framework* obj, uint8_t concurrent_CoreId_A, uint8_t concurrent_CoreId_B);
     // get.
-        uint8_t get_Length_Of_list_Of_launchActive_Count_For_ThreadID();
     // set.
         void set_ptr_list_Of_launchActive_Count_For_ThreadID(std::list<uint32_t>* newPtr);
         void set_ptr_list_Of_launchIdle_Count_For_ThreadID(std::list<uint32_t>* newPtr);
