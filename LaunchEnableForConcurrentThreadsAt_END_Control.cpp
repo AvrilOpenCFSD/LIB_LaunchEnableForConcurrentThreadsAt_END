@@ -194,10 +194,6 @@
         std::advance(temp, concurrenct_threadID);
         return *temp;
     }
-    uint8_t OpenAvrilLIB::launchEnableForConcurrentThreadsAt_END_Control::get_Length_Of_list_Of_launchActive_Count_For_ThreadID()
-    {
-        return sizeof(_list_Of_launchActive_Count_For_ThreadID);
-    }
     uint8_t OpenAvrilLIB::launchEnableForConcurrentThreadsAt_END_Control::get_new_concurrentCycle_Try_CoreId_Index()
     {
         return _new_concurrentCycle_Try_CoreId_Index;

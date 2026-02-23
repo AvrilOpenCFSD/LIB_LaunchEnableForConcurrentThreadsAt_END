@@ -35,7 +35,7 @@
 		obj->get_ptr_LaunchConcurrency()->get_ptr_LaunchConcurrency_Control()->initialise_flag_praisinglaunch(newINITIALISED_Flagbit1);
 		delete newINITIALISED_Flagbit1;
 		uint32_t* newINITIALISED_uint32_t = new uint32_t(UINT32_MAX);
-		for (uint8_t concurrenctThreadID = 0; concurrenctThreadID < obj->get_ptr_LaunchConcurrency()->get_ptr_LaunchConcurrency_Control()->get_Length_Of_list_Of_launchActive_Count_For_ThreadID(); concurrenctThreadID++)
+		for (uint8_t concurrenctThreadID = 0; concurrenctThreadID < (obj->get_ptr_LaunchConcurrency()->get_ptr_Global()->get_number_Implemented_Threads() - 1); concurrenctThreadID++)
 		{
 			obj->get_ptr_LaunchConcurrency()->get_ptr_LaunchConcurrency_Control()->initialise_Item_On_list_Of_launchActive_Count_For_ThreadID(concurrenctThreadID, newINITIALISED_uint32_t);
 			obj->get_ptr_LaunchConcurrency()->get_ptr_LaunchConcurrency_Control()->initialise_Item_On_list_Of_launchIdle_Count_For_ThreadID(concurrenctThreadID, newINITIALISED_uint32_t);
