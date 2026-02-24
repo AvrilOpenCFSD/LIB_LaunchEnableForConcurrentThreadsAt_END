@@ -41,9 +41,9 @@ namespace OpenAvrilLIB
         static void create_flag_core_IDLE(bool* newDEFAULT_Flag);
         static void create_number_Implemented_Threads(uint8_t* newDEFAULT_Value);
         // get.
-        static bool Get_flag_core_ACTIVE();
-        static bool Get_flag_core_IDLE();
-        uint8_t Get_number_Implemented_Threads();
+        static bool* get_ptr_flag_core_ACTIVE();
+        static bool* get_ptr_flag_core_IDLE();
+        static uint8_t* get_ptr_number_Implemented_Threads();
         // set.
         static void set_flag_core_ACTIVE(bool value);
         static void set_flag_core_IDLE(bool value);

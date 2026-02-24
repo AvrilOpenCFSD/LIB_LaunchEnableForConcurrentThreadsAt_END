@@ -74,16 +74,31 @@
     void OpenAvrilLIB::LaunchEnableForConcurrentThreadsAt_END_Global::create_flag_core_ACTIVE(bool* newDEFAULT_Flag)
     {
         set_flag_core_ACTIVE(*newDEFAULT_Flag);
+        while (get_ptr_flag_core_ACTIVE() == NULL) {}
     }
     void OpenAvrilLIB::LaunchEnableForConcurrentThreadsAt_END_Global::create_flag_core_IDLE(bool* newDEFAULT_Flag)
     {
         set_flag_core_IDLE(*newDEFAULT_Flag);
+        while (get_ptr_flag_core_IDLE() == NULL) {}
     }
     void OpenAvrilLIB::LaunchEnableForConcurrentThreadsAt_END_Global::create_number_Implemented_Threads(uint8_t* newDEFAULT_Value)
     {
         set_number_Implemented_Threads(*newDEFAULT_Value);
+        while (get_ptr_number_Implemented_Threads() == NULL) {}
     }
         // get.
+    bool* OpenAvrilLIB::LaunchEnableForConcurrentThreadsAt_END_Global::get_ptr_flag_core_ACTIVE()
+    {
+        return _ptr_flag_core_ACTIVE;
+    }
+    bool* OpenAvrilLIB::LaunchEnableForConcurrentThreadsAt_END_Global::get_ptr_flag_core_IDLE()
+    {
+        return _ptr_flag_core_IDLE;
+    }
+    uint8_t* OpenAvrilLIB::LaunchEnableForConcurrentThreadsAt_END_Global::get_ptr_number_Implemented_Threads()
+    {
+        return _ptr_number_Implemented_Threads;
+    }
         // set.
     void OpenAvrilLIB::LaunchEnableForConcurrentThreadsAt_END_Global::set_flag_core_ACTIVE(bool flag_core_ACTIVE)
     {
