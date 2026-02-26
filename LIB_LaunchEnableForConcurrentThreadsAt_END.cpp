@@ -19,13 +19,22 @@
         // get.
         // set.
     // static.
+    /*
     void* OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtEND::CLIBLaunchEnableForConcurrentThreadsAtEND::create_Program()
     {
         stat_set_ptr_Framework(new class OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtEND::LaunchEnableForConcurrentThreadsAt_END_Framework());
         while (stat_get_ptr_Framework() == NULL) {}
         stat_get_ptr_Framework()->initialise(stat_get_ptr_Framework());
         return (void*)stat_get_ptr_Framework();
-    }
+    }//ToDO: uncomment for C#.
+    */
+    OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtEND::LaunchEnableForConcurrentThreadsAt_END_Framework* OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtEND::CLIBLaunchEnableForConcurrentThreadsAtEND::generate_Program()
+    {
+        stat_set_ptr_Framework(new class OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtEND::LaunchEnableForConcurrentThreadsAt_END_Framework());
+        while (stat_get_ptr_Framework() == NULL) {}
+        stat_get_ptr_Framework()->initialise(stat_get_ptr_Framework());
+        return stat_get_ptr_Framework();
+    }//ToDO: uncomment for C++.
     void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtEND::CLIBLaunchEnableForConcurrentThreadsAtEND::request_Wait_launch(OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtEND::LaunchEnableForConcurrentThreadsAt_END_Framework* obj, uint8_t concurrentThreadID)
     {
         obj->get_ptr_LaunchConcurrency()->thread_Start(obj, concurrentThreadID);

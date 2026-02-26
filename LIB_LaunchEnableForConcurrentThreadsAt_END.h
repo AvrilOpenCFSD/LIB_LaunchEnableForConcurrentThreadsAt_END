@@ -19,7 +19,8 @@ namespace OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtEND
 		// get.
 		// set.
 	// static.
-		static void* create_Program();
+		//static void* generate_Program();//ToDO: uncomment for C#.
+		static class LaunchEnableForConcurrentThreadsAt_END_Framework* generate_Program();//ToDO: uncomment for C++.
 		static void request_Wait_launch(class LaunchEnableForConcurrentThreadsAt_END_Framework* obj, uint8_t concurrentThreadID);
 		static void thread_End(class LaunchEnableForConcurrentThreadsAt_END_Framework*, uint8_t concurrentThreadID);
 		// get.
