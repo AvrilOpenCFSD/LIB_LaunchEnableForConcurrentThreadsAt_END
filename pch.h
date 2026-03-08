@@ -9,9 +9,10 @@
 
 // add headers that you want to pre-compile here
 #include "framework.h"
+#include <array>
 #include <cstdint>
 #include <cstddef>
-#include <array>
+#include <iostream>
 #include <vector>
 #include <list>
 #include "LaunchEnableForConcurrentThreadsAt_END_Framework.h"

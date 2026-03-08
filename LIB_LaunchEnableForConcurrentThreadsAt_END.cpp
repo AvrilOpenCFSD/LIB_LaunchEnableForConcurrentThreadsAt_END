@@ -2,6 +2,7 @@
 #include "framework.h"
 #include "LIB_LaunchEnableForConcurrentThreadsAt_END.h"
 
+
 // pointer.
     // classes.
     OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtEND::LaunchEnableForConcurrentThreadsAt_END_Framework* _ptr_Framework_LaunchEnableForConcurrentThreadsAt_END = NULL;
@@ -33,6 +34,18 @@
         stat_set_ptr_Framework(new class OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtEND::LaunchEnableForConcurrentThreadsAt_END_Framework());
         while (stat_get_ptr_Framework() == NULL) {}
         stat_get_ptr_Framework()->initialise(stat_get_ptr_Framework());
+        std::cout << "        ,     \\      /      ," << std::endl;
+        std::cout << "       / \\    )\\ __ /(     / \\ " << std::endl;
+        std::cout << "      /   \\   (_\\  /_)    /   \\ " << std::endl;
+        std::cout << "____ / ____\\__ \\@  @/ ___/_____\\_____" << std::endl;
+        std::cout << "|              |\\../|               |" << std::endl;
+        std::cout << "|               \\VV/                |" << std::endl;
+        std::cout << "|        MIT Write Que .dll         |" << std::endl;
+        std::cout << "|___________________________________|" << std::endl;
+        std::cout << "|    / \\ /        \\\\        \\ /\\    |" << std::endl;
+        std::cout << "|  /    V          ))        V   \\  |" << std::endl;
+        std::cout << "|/                //               \\| " << std::endl;
+        std::cout << "`                 V                 '" << std::endl;
         return stat_get_ptr_Framework();
     }//ToDO: uncomment for C++.
     void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtEND::CLIBLaunchEnableForConcurrentThreadsAtEND::request_Wait_launch(OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtEND::LaunchEnableForConcurrentThreadsAt_END_Framework* obj, uint8_t concurrentThreadID)
